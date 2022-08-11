@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Check headlines for clickbait!
+{% endblock %}
+
+{% block main %}
+<h4>
+	Suspicious Headline?
+	<small class="text-muted">Check whether a headline or subject is clickbait here!</small>
+</h4>
+
+<div class="container-fluid text-md-start mt-5">
+	<p>
+		<strong>Just insert a suspicious title from social media or e-mail into the box below</strong> and find out whether it is <mark>clickbait</mark>.<br> 
+		<ul>
+			<li>This clickbait detector is based on a machine learning model</li>
+			<li>The model uses a Naive Bayes classifier and was trained on a set of almost 22.000 headlines from various news outlets.</li>
+			<li>Subsequently, the model was tested on another 11.000 headlines.</li>
+		</ul>
+		
+	</p>
+</div>
+
+<div class="form-outline mt-4">
+	<form action="/predict" method="post">
+		<textarea name="message" class="form-control" placeholder="Copy headline here..." type="text" rows="4"></textarea>
+		<button class="btn btn-primary mt-2" type="submit" style="background-color: #000000;">Check for clickbait</button>
+    </form>
+</div>
+{% endblock %}

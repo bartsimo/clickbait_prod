@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result: Clickbait check
+{% endblock %}
+
+{% block main %}
+	<h4>
+		Result
+	</h4>
+
+	<h5 class="mt-4">
+		You entered: 
+		<small class="text-muted">		"{{ message }}"</small>
+	</h5>
+	
+	<div class="mt-5">
+		{% if prediction == 1%}
+		<h1 style="color:red;">Clickbait!</h2>
+		{% elif prediction == 0%}
+		<h1 style="color:blue;">Serious headline</h2>
+		{% endif %}
+	</div>
+
+	<div class="mt-5">
+		<a class="btn btn-primary mt-5" href="/" style="background-color: #000000;" >Check another headline</a>
+	</div>
+
+
+{% endblock %}
