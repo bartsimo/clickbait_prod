@@ -6,11 +6,11 @@
 
 {% block main %}
 <h4>
-	Suspicious Headline?
+	Suspicious Headline?<br class="responsive" />
 	<small class="text-muted">Check whether a headline or subject is clickbait here!</small>
 </h4>
 
-<div class="container-fluid text-md-start mt-5">
+<div class="container-fluid text-md-start mt-4 text-center-responsive">
 	<p>
 		<strong>Just insert a suspicious title from social media or e-mail into the box below</strong> and find out whether it is <mark>clickbait</mark>.<br> 
 		<ul>
@@ -22,10 +22,10 @@
 	</p>
 </div>
 
-<div class="form-outline mt-4">
+<div class="form-outline py-4">
 	<form action="/predict" method="post">
 		<textarea name="message" class="form-control" placeholder="Copy headline here..." type="text" rows="4"></textarea>
-		<button class="btn btn-primary mt-2" type="submit" style="background-color: #000000;">Check for clickbait</button>
+		<button class="btn btn-primary mt-3" type="submit" style="background-color: #000000;">Check for clickbait</button>
     </form>
 </div>
 {% endblock %}
