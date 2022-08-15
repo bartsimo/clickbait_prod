@@ -21,7 +21,7 @@ br.responsive {
     display: inline;
   }
   
-@media (min-width: 240px) { 
+@media (min-width: 376px) { 
     br.responsive {
       display: none; 
     }
