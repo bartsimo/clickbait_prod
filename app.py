@@ -1,9 +1,7 @@
 from os import path
 import sqlite3
-
-from flask import Flask, flash, redirect, render_template, url_for, request, session
+from flask import Flask, render_template, request
 from flask_session import Session
-
 import joblib
 
 # Configure SQLite such that column names are always shown:
