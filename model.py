@@ -1,5 +1,4 @@
 import pandas as pd
-import numpy as np
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.naive_bayes import MultinomialNB
@@ -10,9 +9,6 @@ import joblib
 df = pd.read_csv("clickbait_data.csv", encoding="latin-1")
 x = df["headline"]
 y = df["clickbait"]
-
-# Check
-# print(df)
 
 #Create countVectorizer
 cv = CountVectorizer()
