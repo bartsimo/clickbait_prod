@@ -38,3 +38,5 @@ All html files extend layout.html using jinja syntax.
 **result.html** Displays the result of the clickbait check from the user's input as returned by the ML model. Lets you return to home for repeated clickbait checks.
 
 ##### static
+In addition to styling the html sites with Bootstrap, custom CSS is used. 
+**styles.css** contains custom color and margin settings. Most importantly, it defines the responsiveness of the appearance. Based on width of the viewport, margins and text alignment is set here.
