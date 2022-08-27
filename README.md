@@ -79,3 +79,11 @@ Parses the kaggle data into dataframes. After that it uses several methods from 
 ##### requirements.txt
 Summarizes the necessary packages that need to be installed (e.g. via pip install package from the Terminal) for the app to run. Initially produced automatically from VS Code but needed to be customized to meet requirements on pythonanywhere.com.
 
+##### Authors
+bartsimo (Simon Bartke)
+
+##### License
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+##### Acknowledgments
+Thanks for my familiy for the time to let me build this. Thanks for the CS50 team, awesome course!
