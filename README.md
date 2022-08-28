@@ -1,5 +1,5 @@
 # Clickbait
-#### Video Demo:  <URL HERE>
+#### Video Demo: https://youtu.be/Qw827R7mZQg
 #### Description:
 Clickbait is a flask app that enables to check whether a headline (in English language) is clickbait. In the background a machine learning (ML) model is used to classify whether a headline is clickbait or not. The app is live on the web and can be found [here](http://bartsimo.pythonanywhere.com/).
 
